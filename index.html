@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Abbas Bhat | Ph.D. Scholar & Developer</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-main: #e0e0e0;
+            --accent-green: #00ff41; /* Terminal green */
+            --accent-blue: #00e5ff;  /* Cyber blue */
+            --surface-color: #111;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .terminal-font {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* Container & Grid */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .prompt {
+            color: var(--accent-green);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .typewriter-container {
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            min-height: 2rem;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2rem;
+            background-color: var(--accent-blue);
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--accent-blue);
+        }
+        
+        h2::before {
+            content: "./";
+            color: var(--accent-green);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background: var(--surface-color);
+            border: 1px solid #333;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .skill-tag:hover {
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Timeline (Education & Experience) */
+        .timeline-item {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            border-left: 2px solid var(--accent-blue);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -6px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: var(--accent-green);
+            border-radius: 50%;
+        }
+
+        .timeline-title {
+            font-size: 1.2rem;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .timeline-meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        /* Research Section */
+        .paper-card {
+            background: var(--surface-color);
+            padding: 20px;
+            border-left: 3px solid var(--accent-green);
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #666;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--accent-green);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <div class="terminal-font">
+                <span class="prompt">root@abbas:~$</span> whoami
+            </div>
+            <h1>Mohammad Abbas Bhat</h1>
+            <div class="typewriter-container">
+                <span id="typewriter"></span><span class="cursor"></span>
+            </div>
+            <p style="margin-top: 30px; max-width: 600px; color: #aaa;">
+                Bridging the gap between advanced structural mechanics and high-performance software engineering. 
+                Experienced in full-stack web development, Android architectures, and computational modeling.
+            </p>
+        </header>
+
+        <!-- Experience & Education -->
+        <section id="experience">
+            <h2>Experience_&_Education</h2>
+            
+            <div class="timeline-item">
+                <div class="timeline-title">Ph.D. Scholar</div>
+                <div class="timeline-meta">Indian Institute of Technology (IIT) Delhi | Current</div>
+                <p>Researching advanced solid mechanics, structural buckling, and biomechanics (actin filament configurations).</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-title">Deputy Manager</div>
+                <div class="timeline-meta">TATA Projects | 1 Year 9 Months</div>
+                <p>Managed project execution and technical operations, bridging engineering design with on-site deployment.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-title">M.Tech in Mechanical Engineering</div>
+                <div class="timeline-meta">National Institute of Technology (NIT) Srinagar</div>
+                <p>Specialized in applied mechanics. Thesis archived via Zenodo.</p>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-title">B.Tech in Mechanical Engineering</div>
+                <div class="timeline-meta">National Institute of Technology (NIT) Srinagar</div>
+                <p>Core engineering foundations and analytical modeling.</p>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section id="skills">
+            <h2>Tech_Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">C / C++</div>
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Android Dev</div>
+                <div class="skill-tag">Web (HTML/CSS/JS)</div>
+                <div class="skill-tag">MATLAB</div>
+                <div class="skill-tag">LaTeX</div>
+                <div class="skill-tag">AutoCAD</div>
+                <div class="skill-tag">Git / GitHub</div>
+            </div>
+        </section>
+
+        <!-- Research -->
+        <section id="research">
+            <h2>Research_&_Publications</h2>
+            <div class="paper-card">
+                <div class="timeline-title">A Novel Higher-Order Shear and Normal Deformation Theory for Accurate Bending Analysis of Thick Beams</div>
+                <div class="timeline-meta">Published in Mechanics of Solids (2025)</div>
+                <p>Developed mathematical models and computational solutions to accurately predict the mechanical behavior and bending of complex structural beams.</p>
+            </div>
+        </section>
+        
+        <!-- Contact / Links -->
+        <section id="contact">
+            <h2>System_Connections</h2>
+            <p>
+                <span class="prompt">Email:</span> <a href="mailto:your.email@example.com">your.email@example.com</a><br><br>
+                <span class="prompt">GitHub:</span> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a><br><br>
+                <span class="prompt">LinkedIn:</span> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>EOF. System halted.</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">&copy; 2026 Mohammad Abbas Bhat</p>
+        </footer>
+    </div>
+
+    <!-- Typewriter Script -->
+    <script>
+        const phrases = [
+            "Ph.D. Scholar at IIT Delhi.",
+            "Solid Mechanics Researcher.",
+            "Pro Android Developer.",
+            "Full-Stack Web Architect.",
+            "C/C++ & Python Programmer."
+        ];
+        
+        let phraseIndex = 0;
+        let letterIndex = 0;
+        let currentText = "";
+        let isDeleting = false;
+        
+        const typeSpeed = 50;
+        const deleteSpeed = 30;
+        const delayBetweenPhrases = 2000;
+        
+        function typeWriter() {
+            const targetElement = document.getElementById("typewriter");
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                currentText = currentPhrase.substring(0, letterIndex - 1);
+                letterIndex--;
+            } else {
+                currentText = currentPhrase.substring(0, letterIndex + 1);
+                letterIndex++;
+            }
+            
+            targetElement.innerHTML = currentText;
+            
+            let speed = isDeleting ? deleteSpeed : typeSpeed;
+            
+            if (!isDeleting && currentText === currentPhrase) {
+                speed = delayBetweenPhrases;
+                isDeleting = true;
+            } else if (isDeleting && currentText === "") {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                speed = 500;
+            }
+            
+            setTimeout(typeWriter, speed);
+        }
+        
+        // Start typing animation on load
+        window.onload = typeWriter;
+    </script>
+</body>
+</html>
